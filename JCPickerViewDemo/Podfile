@@ -1,0 +1,16 @@
+platform :ios, '9.0'
+
+inhibit_all_warnings!
+
+target 'JCPickerView' do
+    use_frameworks!
+
+    #模型转换
+    pod 'ObjectMapper', 	'~> 3.1'
+
+    #初始化简写
+    pod 'Then'
+
+    #swift约束布局
+    pod 'SnapKit', 	'~> 4.0.0'
+end
