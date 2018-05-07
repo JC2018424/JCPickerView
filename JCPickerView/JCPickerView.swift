@@ -388,7 +388,7 @@ final public class JCPickerView: UIView {
     // MARK: - 子控件
     
     /// 弹框视图
-    private let alertView: UIView = {
+    let alertView: UIView = {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.cornerRadius = 4
