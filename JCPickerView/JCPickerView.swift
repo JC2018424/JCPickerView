@@ -371,19 +371,19 @@ final public class JCPickerView: UIView {
     // MARK: - 私有成员变量
     
     /// 日期显示视图对象
-    fileprivate var calanderView: UIView = UIView()
+    var calanderView: UIView = UIView()
     
     /// 日期类型, 默认类型为年月日
-    private var dateStyle: JCDateAlertEnum = .YMD
+    var dateStyle: JCDateAlertEnum = .YMD
     
     /// 主题颜色
-    private var mainColor = Color.selectedColor
+    var mainColor = Color.selectedColor
     
     /// 日历的宽度
-    private var alertWidth: CGFloat = 0.0
+    var alertWidth: CGFloat = 0.0
     
     /// 日历的高度
-    private var alertHeight: CGFloat = 0.0
+    var alertHeight: CGFloat = 0.0
     
     // MARK: - 子控件
     

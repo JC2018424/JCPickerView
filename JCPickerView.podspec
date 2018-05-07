@@ -13,6 +13,6 @@ s.requires_arc = true
 s.framework  = "UIKit"
 s.dependency "ObjectMapper", "~> 3.1"
 s.dependency "Then", "~> 2.3.0"
-s.dependency "SnapKit", "~> 4.0.0"
+s.dependency "SnapKit", "~> 3.2.0"
 
 end

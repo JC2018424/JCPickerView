@@ -64,27 +64,27 @@ final public class JCDateView: UIView {
     // MARK: - 私有成员变量
     
     /// 无限轮循
-    private var maxCount: Int = 10000
+    var maxCount: Int = 10000
     
     /// 默认选中颜色已经渲染
-    private var didSetDefaultColor: Bool = false
+    var didSetDefaultColor: Bool = false
     
     /// 日期显示模型
-    private var dateModel = JCDateModel(JSON: [:])!
+    var dateModel = JCDateModel(JSON: [:])!
     
     /// 日期样式
-    private var dateStyle: JCDateAlertEnum = .YMD
+    var dateStyle: JCDateAlertEnum = .YMD
     
     /// 日期样式，每项是否默认渲染数据源
-    private var dateDefaultColorArr: [Bool] = []
+    var dateDefaultColorArr: [Bool] = []
     
     /// 日历可见的行数
-    private let visibleRow: Int = 5
+    let visibleRow: Int = 5
     
     // MARK: - 子控件
     
     /// 日期控件
-    private lazy var pickerView: UIPickerView = {
+    lazy var pickerView: UIPickerView = {
         let pickerView = UIPickerView()
         pickerView.delegate = self
         pickerView.dataSource = self
