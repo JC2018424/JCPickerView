@@ -4,7 +4,7 @@
 //
 //  Created by JC on 2018/3/15.
 //  Copyright © 2018年 JC. All rights reserved.
-//
+// 
 
 import UIKit
 import Then
@@ -188,10 +188,10 @@ final public class JCPickerView: UIView {
         isUserInteractionEnabled = true
         setMainColor(selectColor: mainColor)
         /// 添加事件
-        confirmBtn.addTarget(self, action: .confirm, for: .touchUpInside)
-        cancelBtn.addTarget(self, action: .cancel, for: .touchUpInside)
+        confirmBtn.addTarget(self, action: #selector(confirmAction), for: .touchUpInside)
+        cancelBtn.addTarget(self, action: #selector(cancelAction), for: .touchUpInside)
         /// 添加通知
-        NotificationCenter.default.addObserver(self, selector: .dateChange, name: NSNotification.Name(rawValue: kDateChange), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(dateChange), name: NSNotification.Name(rawValue: kDateChange), object: nil)
     }
 
     // MARK: - 内部接口
